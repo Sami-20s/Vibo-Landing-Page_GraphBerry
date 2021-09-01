@@ -1,0 +1,13 @@
+$white: white;
+$darkBlue: #233148;
+$lightBlue: #6a6d89;
+
+// font family
+$font: "Work Sans";
+
+@mixin par($s, $w, $c) {
+    font-family: $font;
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+}

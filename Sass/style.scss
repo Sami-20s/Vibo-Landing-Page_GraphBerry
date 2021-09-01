@@ -1,0 +1,15 @@
+*::after,
+*::before,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    box-sizing: border-box;
+}
+@import "./variables/variables";
+@import "./navbar/navbar";
+@import "./header/header";
+@import "./features/features";

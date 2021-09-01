@@ -1,0 +1,238 @@
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 64px 177px 0;
+}
+
+body header .nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav__container__navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav__container__navbar ul li {
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+body header .nav__container__navbar ul li:not(:first-child) {
+  margin-left: 73px;
+}
+
+body header .nav__container__navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body header .header__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 180px;
+}
+
+body header .header__container__heading h1 {
+  font-family: "Work Sans";
+  font-size: 47px;
+  font-weight: 700;
+  color: white;
+  max-width: 700px;
+  line-height: 1.333;
+}
+
+body header .header__container__heading p {
+  font-family: "Work Sans";
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.816;
+  margin-top: 10px;
+}
+
+body header .header__container__button button {
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 11px 34px 16px;
+  margin-top: 55px;
+  border: solid 2px white;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+body header .header__container__button button:first-child {
+  margin-right: 27px;
+  color: #233148;
+  background-color: white;
+}
+
+body header .header__container__button button:last-child {
+  background-color: transparent;
+}
+
+body header .mobile__container {
+  margin-top: 72px;
+}
+
+body header {
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 200vh;
+}
+
+header .features {
+  width: 100%;
+  height: 1300px;
+  margin-top: -300px;
+  padding: 382px 176px;
+  background-image: url(../img/background2.png);
+  background-position-x: center;
+}
+
+header .features__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .features__wrapper .features__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+header .features__wrapper .features__container__shop {
+  position: relative;
+  right: 80px;
+  bottom: 70px;
+}
+
+header .features__wrapper .features__container__phone {
+  position: relative;
+  top: 100px;
+  right: 63px;
+}
+
+header .features__wrapper .features__container__paint {
+  position: relative;
+  right: 170px;
+}
+
+header .features__wrapper .features__container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 271px;
+  height: 322px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 52px 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 9px 0px rgba(35, 39, 47, 0.1);
+          box-shadow: 0px 6px 9px 0px rgba(35, 39, 47, 0.1);
+  cursor: pointer;
+}
+
+header .features__wrapper .features__container div img {
+  width: 52px;
+  height: 52px;
+}
+
+header .features__wrapper .features__container div h4 {
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 600;
+  color: #233148;
+  line-height: 1.946;
+  margin: 20px 0 15px;
+}
+
+header .features__wrapper .features__container div p {
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6d89;
+  width: 230px;
+  height: 92px;
+  line-height: 1.946;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
