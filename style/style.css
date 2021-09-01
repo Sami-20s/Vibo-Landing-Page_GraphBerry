@@ -14,11 +14,12 @@ html {
 }
 
 body header {
-  width: 100%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  width: 100%;
+  height: 2200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -26,6 +27,9 @@ body header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 body header .nav {
@@ -136,13 +140,6 @@ body header .mobile__container {
   margin-top: 72px;
 }
 
-body header {
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  height: 200vh;
-}
-
 header .features {
   width: 100%;
   height: 1300px;
@@ -234,5 +231,9 @@ header .features__wrapper .features__container div p {
   height: 92px;
   line-height: 1.946;
   text-align: center;
+}
+
+.about_1 {
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
