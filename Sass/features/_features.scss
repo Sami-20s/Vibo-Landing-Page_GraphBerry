@@ -10,25 +10,46 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .mobile2__container {
+                position: relative;
+                right: 500px;
+                transition: all 1s ease;
+                &.f {
+                    right: 0px;
+                }
+            }
+
             .features__container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 &__shop {
                     position: relative;
-                    right: 80px;
-                    bottom: 70px;
-                    // margin-right: 80px;
-                    // margin-bottom: 70px;
+                    right: 20px;
+                    bottom: 10px;
+                    transition: all 1s ease;
+                    &.shopm {
+                        right: 80px;
+                        bottom: 70px;
+                    }
                 }
                 &__phone {
                     position: relative;
-                    top: 100px;
-                    right: 63px;
+                    top: 20px;
+                    right: 0px;
+                    transition: all 1s ease;
+                    &.phonem {
+                        top: 100px;
+                        right: 63px;
+                    }
                 }
                 &__paint {
                     position: relative;
-                    right: 170px;
+                    right: 20px;
+                    transition: all 1s ease;
+                    &.paintm {
+                        right: 170px;
+                    }
                 }
                 div {
                     display: flex;

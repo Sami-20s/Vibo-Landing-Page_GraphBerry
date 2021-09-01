@@ -161,6 +161,17 @@ header .features__wrapper {
           justify-content: space-between;
 }
 
+header .features__wrapper .mobile2__container {
+  position: relative;
+  right: 500px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+header .features__wrapper .mobile2__container.f {
+  right: 0px;
+}
+
 header .features__wrapper .features__container {
   display: -ms-grid;
   display: grid;
@@ -172,18 +183,38 @@ header .features__wrapper .features__container {
 
 header .features__wrapper .features__container__shop {
   position: relative;
+  right: 20px;
+  bottom: 10px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+header .features__wrapper .features__container__shop.shopm {
   right: 80px;
   bottom: 70px;
 }
 
 header .features__wrapper .features__container__phone {
   position: relative;
+  top: 20px;
+  right: 0px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+header .features__wrapper .features__container__phone.phonem {
   top: 100px;
   right: 63px;
 }
 
 header .features__wrapper .features__container__paint {
   position: relative;
+  right: 20px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+header .features__wrapper .features__container__paint.paintm {
   right: 170px;
 }
 
