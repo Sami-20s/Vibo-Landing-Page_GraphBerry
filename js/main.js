@@ -1,10 +1,18 @@
+// Feature Variables
+
 let mobile = document.querySelector(".mobile2__container");
 let shop = document.querySelector(".features__container__shop");
 let message = document.querySelector(".features__container__message");
 let paint = document.querySelector(".features__container__paint");
 let phone = document.querySelector(".features__container__phone");
+
+// About Variables
+
+let aboutBox = document.querySelectorAll(".about_1__wrapper__right__box");
+
+// Feature Transitions
+
 window.onscroll = function () {
-    console.log(this.scrollY);
     if (this.scrollY >= 1000) {
         mobile.classList.add("f");
         shop.classList.add("shopm");
@@ -19,3 +27,14 @@ window.onscroll = function () {
         phone.classList.remove("phonem");
     }
 };
+phone.addEventListener;
+
+// About Box Click
+
+// for (let i = 0; i < aboutBox.length; i++) {
+//     console.log(aboutBox[i]);
+//     aboutBox[i].addEventListener("click", () => {
+//         aboutBox[i].classList.remove("f");
+//         aboutBox[i].classList.toggle("f");
+//     });
+// }
