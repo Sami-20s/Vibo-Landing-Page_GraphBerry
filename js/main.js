@@ -31,10 +31,11 @@ phone.addEventListener;
 
 // About Box Click
 
-// for (let i = 0; i < aboutBox.length; i++) {
-//     console.log(aboutBox[i]);
-//     aboutBox[i].addEventListener("click", () => {
-//         aboutBox[i].classList.remove("f");
-//         aboutBox[i].classList.toggle("f");
-//     });
-// }
+aboutBox.forEach(function (el) {
+    el.onclick = function () {
+        aboutBox.forEach(function (el) {
+            el.classList.remove("active");
+        });
+        this.classList.add("active");
+    };
+});

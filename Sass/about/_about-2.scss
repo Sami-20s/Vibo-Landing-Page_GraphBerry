@@ -1,0 +1,59 @@
+.about_2 {
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 476px;
+        padding: 0 176px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $gray;
+        &__img {
+        }
+        &__des {
+            height: 330px;
+            h3 {
+                @include par(30px, 700, $darkBlue);
+                line-height: 2;
+                margin-bottom: 20px;
+            }
+            h4 {
+                @include par(15px, 700, $darkBlue);
+                position: relative;
+                line-height: 1.816;
+                margin-bottom: 15px;
+                padding-left: 35px;
+                &::after {
+                    content: "✔";
+                    position: absolute;
+                    left: 0;
+                    transform: translateY();
+                    padding: 0 7px;
+                    text-align: center;
+                    background-color: $dodgerBlue;
+                    border-radius: 100%;
+                    transform: scale(0.7);
+                }
+            }
+            p {
+                @include par(14px, 400, $lightBlue);
+                width: 458px;
+                height: 122px;
+                margin-top: 30px;
+                line-height: 1.946;
+            }
+        }
+    }
+}
+.Cras_ultricies_ligul {
+    font-size: 14px;
+    font-family: "Work Sans";
+    color: rgb(106, 109, 137);
+
+    text-align: left;
+    position: absolute;
+    left: 835.187px;
+    top: 3016.843px;
+
+    z-index: 66;
+}

@@ -33,6 +33,7 @@
                 border: solid 1px #83e4ff;
                 border-radius: 8px;
                 outline: none;
+                cursor: pointer;
             }
         }
         &__right {
@@ -46,31 +47,72 @@
                 align-items: center;
                 margin-bottom: 26px;
                 padding: 28px 26px;
-                background-color: rgb(255, 255, 255);
+                background: $white;
                 box-shadow: 0px 6px 9px 0px rgba(35, 39, 47, 0.1);
                 cursor: pointer;
+                transform: scale(1);
+                transition: bacground, padding, transform 0.4s ease-in-out;
+                &:hover {
+                    transform: scale(1.02);
+                }
+                &.active {
+                    padding: 28px 26px 35px;
+                    background-color: $dodgerBlue;
+                    transform: scale(1.05);
+                    img {
+                        margin-bottom: 60px;
+                    }
+                    p {
+                        display: block;
+                    }
+                }
                 h5 {
                     @include par(15px, 600, $darkBlue);
                     left: 85px;
                     margin-left: 20px;
                     text-align: left;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+                p {
+                    display: none;
+                    @include par(14px, 400, $white);
+                    width: 351px;
+                    line-height: 1.946;
+                    margin-left: 20px;
                 }
                 &:first-child {
                     padding-left: 30px;
                 }
                 &:nth-child(2) {
                     padding-left: 36px;
-                    h5 {
+                    h5,
+                    p {
                         margin-left: 28px;
                     }
                 }
                 &:last-child {
                     margin-bottom: 0;
-                    h5 {
+                    h5,
+                    p {
                         margin-left: 22px;
                     }
                 }
             }
         }
     }
+}
+.Cras_ultricies_ligul {
+    font-size: 14px;
+    font-family: "Work Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.946;
+    text-align: left;
+    position: absolute;
+    left: 823.047px;
+    top: 2370.843px;
+    width: 351px;
+    height: 40px;
+    z-index: 95;
 }
