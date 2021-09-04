@@ -1,0 +1,73 @@
+footer {
+    .footer__wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 665px;
+        background-color: $white;
+        z-index: -1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 144px;
+        &__links {
+            display: flex;
+            div {
+                &:not(:last-child) {
+                    margin-right: 132px;
+                }
+                ul li {
+                    list-style: none;
+                    &:first-child {
+                        margin-bottom: 32px;
+                        @include par(15px, 700, $darkBlue);
+                        text-decoration: none;
+                    }
+                    &:not(:first-child) {
+                        margin-bottom: 20px;
+                        a {
+                            @include par(14px, 400, $lightBlue);
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        &__paragraph {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            h3 {
+                @include par(30px, 600, $darkBlue);
+                text-align: center;
+                line-height: 2;
+                margin-bottom: 10px;
+            }
+            p {
+                @include par(14px, 400, $lightBlue);
+                text-align: center;
+                line-height: 1.946;
+            }
+        }
+        &__submit {
+            margin-top: 40px;
+            input {
+                width: 571px;
+                height: 51px;
+                background-color: rgb(226, 226, 226);
+                border: none;
+                margin-right: 25px;
+            }
+            button {
+                @include par(15px, 600, $darkBlue);
+                width: 171px;
+                height: 51px;
+                border: none;
+                background-color: rgb(51, 210, 253);
+                outline: none;
+            }
+        }
+    }
+}
