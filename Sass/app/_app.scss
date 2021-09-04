@@ -1,0 +1,58 @@
+.app {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 900px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 238px 0 318px;
+        background-image: url(../img/app-background.png);
+        background-position-x: -135px;
+        &__mobile {
+        }
+        &__pargraph {
+            h3 {
+                @include par(30px, 700, $darkBlue);
+                line-height: 2;
+                margin-bottom: 20px;
+            }
+            p {
+                @include par(14px, 400, $white);
+                width: 465px;
+                height: 92px;
+                line-height: 1.946;
+                margin-bottom: 50px;
+            }
+            &__download {
+                img {
+                    width: 161px;
+                    height: 49px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transform: scale(1);
+                    transition: transform 0.3s ease;
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+                    &:hover {
+                        transform: scale(1.04);
+                    }
+                }
+            }
+        }
+    }
+    button {
+        @include par(20px, 700, $white);
+        position: absolute;
+        width: 371px;
+        height: 71px;
+        left: 50%;
+        transform: translate(-50%, -35.5px);
+        border: none;
+        background-image: linear-gradient(180deg, rgb(255, 124, 110) 1%, rgb(245, 49, 127) 99%);
+        box-shadow: 0px 11px 29px 0px rgba(255, 7, 95, 0.2);
+        cursor: pointer;
+        outline: none;
+    }
+}
